@@ -6,6 +6,7 @@
        steps {
            		sh './gradlew build'
            		echo "hello world"
+       
        }
      }
       stage('Test Run')
