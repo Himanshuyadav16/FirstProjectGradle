@@ -32,6 +32,7 @@ public class PostTest extends BaseClass {
         assertThat(jsonObjectPost.getInt("user_id"), is(notNullValue()));
         assertThat(jsonObjectPost.getString("title"), is(notNullValue()));
         assertThat(jsonObjectPost.getString("body"), is(notNullValue()));
+        System.out.println("posttest user");
     }
 
     @Test
@@ -89,6 +90,8 @@ public class PostTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("posttest post");
+
 
     }
 
@@ -160,6 +163,8 @@ public class PostTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("posttest put");
+
 
     }
 
@@ -216,6 +221,8 @@ public class PostTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("posttest delete");
+
 
     }
 

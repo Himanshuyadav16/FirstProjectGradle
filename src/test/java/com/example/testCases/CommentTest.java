@@ -33,6 +33,8 @@ public class CommentTest extends BaseClass {
         assertThat(jsonObjectComment.getString("name"), is(notNullValue()));
         assertThat(jsonObjectComment.getString("body"), is(notNullValue()));
         assertThat(jsonObjectComment.getString("email"), is(notNullValue()));
+        System.out.println("puttest user");
+
     }
 
     @Test
@@ -114,6 +116,8 @@ public class CommentTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("puttest post");
+
 
     }
 
@@ -219,6 +223,8 @@ public class CommentTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("puttest put");
+
 
     }
 
@@ -306,6 +312,8 @@ public class CommentTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("puttest delete");
+
 
     }
 

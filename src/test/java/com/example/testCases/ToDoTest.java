@@ -34,6 +34,8 @@ public class ToDoTest extends BaseClass {
         assertThat(toDoData.getString("title"), is(notNullValue()));
         assertThat(toDoData.getString("due_on"), is(notNullValue()));
         assertThat(toDoData.getString("status"), is(notNullValue()));
+        System.out.println("todotest user");
+
     }
 
     @Test
@@ -91,6 +93,8 @@ public class ToDoTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("todotest post");
+
 
     }
 
@@ -173,6 +177,8 @@ public class ToDoTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("todotest put");
+
 
     }
 
@@ -231,6 +237,8 @@ public class ToDoTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("todotest delete");
+
 
     }
 

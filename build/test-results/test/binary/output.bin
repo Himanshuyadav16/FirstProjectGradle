@@ -1,0 +1,17 @@
+puttest delete
+puttest user
+puttest post
+puttest put
+posttest delete
+posttest user
+	posttest post
+
+posttest put
+todotest delete
+todotest user
+todotest post
+todotest put
+usertest delete
+usertest user
+usertest post
+usertest put

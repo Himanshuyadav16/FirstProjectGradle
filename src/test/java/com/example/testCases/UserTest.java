@@ -33,6 +33,7 @@ public class UserTest extends BaseClass {
         assertThat(userList.getString("gender"), notNullValue());
         assertThat(userList.getString("email"), notNullValue());
         assertThat(userList.getString("status"), notNullValue());
+        System.out.println("usertest user");
     }
 
     @Test
@@ -66,6 +67,7 @@ public class UserTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("usertest post");
     }
 
     @Test
@@ -120,6 +122,7 @@ public class UserTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("usertest put");
     }
 
     @Test
@@ -152,6 +155,7 @@ public class UserTest extends BaseClass {
         Response deleteUserResponse = deleteUsers(userId);
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
+        System.out.println("usertest delete");
     }
 
     //User Get Method

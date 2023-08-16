@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.testCases.CommentTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-08-09T19:26:15" hostname="Apples-MacBook-Pro.local" time="19.914">
+<testsuite name="com.example.testCases.CommentTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-08-14T19:27:46" hostname="Apples-MacBook-Pro.local" time="18.065">
   <properties/>
-  <testcase name="deleteCommentTest" classname="com.example.testCases.CommentTest" time="5.616"/>
-  <testcase name="getCommentTest" classname="com.example.testCases.CommentTest" time="0.761"/>
-  <testcase name="postCommentTest" classname="com.example.testCases.CommentTest" time="5.851"/>
-  <testcase name="putCommentTest" classname="com.example.testCases.CommentTest" time="7.679"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="deleteCommentTest" classname="com.example.testCases.CommentTest" time="8.248"/>
+  <testcase name="getCommentTest" classname="com.example.testCases.CommentTest" time="0.625"/>
+  <testcase name="postCommentTest" classname="com.example.testCases.CommentTest" time="3.999"/>
+  <testcase name="putCommentTest" classname="com.example.testCases.CommentTest" time="5.183"/>
+  <system-out><![CDATA[puttest delete
+puttest user
+puttest post
+puttest put
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
