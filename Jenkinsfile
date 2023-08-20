@@ -1,7 +1,7 @@
  pipeline{
      agent any
      triggers {
-             cron('50 * * * *')
+             cron('30 8 * * 1-5')
          }
      stages{
      stage('Java Version') {
@@ -27,7 +27,18 @@
        steps {
            		sh './gradlew clean test'
        }
+        post {
+                       success { allure([
+                           includeProperties: false,
+                           jdk: '',
+                           properties: [],
+                           reportBuildPolicy: 'ALWAYS',
+                           results: [[path: 'target/allure-results']]
+                       ])
+                   }
+
      }
+
      }
       post{
               always{

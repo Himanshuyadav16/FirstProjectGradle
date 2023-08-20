@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.testCases.CommentTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-08-20T21:10:19" hostname="Apples-MacBook-Pro.local" time="34.079">
+  <properties/>
+  <testcase name="deleteCommentTest" classname="com.example.testCases.CommentTest" time="12.831"/>
+  <testcase name="getCommentTest" classname="com.example.testCases.CommentTest" time="5.683"/>
+  <testcase name="postCommentTest" classname="com.example.testCases.CommentTest" time="5.378"/>
+  <testcase name="putCommentTest" classname="com.example.testCases.CommentTest" time="10.111"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -324,7 +324,6 @@ public class CommentTest extends BaseClass {
                 .body(body)
                 .when()
                 .request(Method.POST, "/posts/" + id + "/comments");
-
         return response;
     }
 

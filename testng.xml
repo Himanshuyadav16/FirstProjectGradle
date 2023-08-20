@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/apple/Desktop/code/GradleFirstProject">
+        <classes>
+            <class name="com.example.testCases.CommentTest"/>
+            <class name="com.example.testCases.PostTest"/>
+            <class name="com.example.testCases.ToDoTest"/>
+            <class name="com.example.testCases.UserTest"/>
+        </classes>
+    </test>
+</suite>
