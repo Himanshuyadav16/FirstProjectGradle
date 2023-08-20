@@ -1,7 +1,7 @@
  pipeline{
      agent any
-pipeline
      triggers {
+
              cron('30 8 * * 1-5')
          }
      stages{
@@ -21,7 +21,6 @@ pipeline
        steps {
                 echo 'hello world'
            		sh './gradlew build'
-
        }
      }
       stage('Test Run')
@@ -29,7 +28,6 @@ pipeline
        steps {
            		sh './gradlew clean test'
        }
- pipeline
         post {
                        success { allure([
                            includeProperties: false,
@@ -42,6 +40,7 @@ pipeline
 
      }
 
+     }
      }
       post{
               always{
