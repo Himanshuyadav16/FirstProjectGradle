@@ -232,6 +232,7 @@ public class ToDoTest extends BaseClass {
 
         assertThat(deleteUserResponse.getStatusCode(), is(HttpStatus.SC_NO_CONTENT));
 
+
     }
 
     //Get ToDos Method
