@@ -1,6 +1,7 @@
  pipeline{
      agent any
      triggers {
+
              cron('30 8 * * 1-5')
          }
      stages{
@@ -39,6 +40,7 @@
 
      }
 
+     }
      }
       post{
               always{
