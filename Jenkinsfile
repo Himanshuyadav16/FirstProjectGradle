@@ -19,7 +19,6 @@
          stage('build')
          {
        steps {
-                echo 'hello world'
            		sh './gradlew build'
        }
      }
@@ -34,7 +33,7 @@
                            jdk: '',
                            properties: [],
                            reportBuildPolicy: 'ALWAYS',
-                           results: [[path: 'allure-report']]
+                           results: [[path: 'allure-results']]
                        ])
                    }
 

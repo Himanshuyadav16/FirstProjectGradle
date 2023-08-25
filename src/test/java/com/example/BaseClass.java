@@ -5,16 +5,21 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import static io.restassured.RestAssured.*;
 
 public class BaseClass {
     public String accessToken = ApplicationProperties.INSTANCE.getToken();
+  public static   Logger logger = LoggerFactory.getLogger(BaseClass.class);
 
     @BeforeSuite
     public void beforeSuite() {
         RestAssured.baseURI = ApplicationProperties.INSTANCE.getUrl();
+        logger.info("Before Suite Start");
     }
     //User Post Method
     public Response postUsers(String userBody) {
@@ -57,7 +62,9 @@ public class BaseClass {
         return response;
     }
 
-
-
+    @AfterSuite
+    public void afterSuite(){
+        logger.info("After Suite  completed");
+    }
 
 }

@@ -9,6 +9,8 @@ import org.apache.http.HttpStatus;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -17,6 +19,7 @@ import static org.hamcrest.Matchers.*;
 
 
 public class ToDoTest extends BaseClass {
+    private static Logger logger= LoggerFactory.getLogger(BaseClass.class);
     @Test
     public void getToDoTest() throws JSONException {
         Response toDoResponse = getToDo();
@@ -270,6 +273,4 @@ public class ToDoTest extends BaseClass {
                 .request(Method.DELETE, "/todos/" + id);
         return response;
     }
-
-
 }
