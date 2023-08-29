@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.testCases.PostTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-08-25T20:13:02" hostname="Apples-MacBook-Pro.local" time="20.812">
+<testsuite name="com.example.testCases.PostTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-08-29T13:04:57" hostname="Apples-MacBook-Pro.local" time="21.943">
   <properties/>
-  <testcase name="deletePostTest" classname="com.example.testCases.PostTest" time="8.562"/>
-  <testcase name="getPostTest" classname="com.example.testCases.PostTest" time="0.588"/>
-  <testcase name="postPostsTest" classname="com.example.testCases.PostTest" time="3.262"/>
-  <testcase name="putPostTest" classname="com.example.testCases.PostTest" time="8.392"/>
+  <testcase name="deletePostTest" classname="com.example.testCases.PostTest" time="8.401"/>
+  <testcase name="getPostTest" classname="com.example.testCases.PostTest" time="0.878"/>
+  <testcase name="postPostsTest" classname="com.example.testCases.PostTest" time="3.673"/>
+  <testcase name="putPostTest" classname="com.example.testCases.PostTest" time="8.984"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

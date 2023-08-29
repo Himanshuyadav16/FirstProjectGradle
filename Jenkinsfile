@@ -26,18 +26,9 @@
          {
        steps {
            		sh './gradlew clean test'
+           		sh './gradlew allureReport'
+           		sh './gradlew allureServe'
        }
-        post {
-                       success { allure([
-                           includeProperties: false,
-                           jdk: '',
-                           properties: [],
-                           reportBuildPolicy: 'ALWAYS',
-                           results: [[path: 'allure-results']]
-                       ])
-                   }
-
-     }
 
      }
      }
